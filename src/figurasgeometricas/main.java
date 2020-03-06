@@ -9,7 +9,9 @@ import java.util.Scanner;
 
 /**
  *
- * @author david
+ * @author david Jimenez
+ * clase main por donde inicia el programa
+ * 
  */
 public class main {
 

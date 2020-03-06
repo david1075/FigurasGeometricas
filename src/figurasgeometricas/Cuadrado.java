@@ -4,21 +4,27 @@
  * and open the template in the editor.
  */
 package figurasgeometricas;
+import java.awt.Graphics;
 
 /**
  *
  * @author david
+ * clase cuadrado que calcula area, perimetro y longitud de sus lados para las figuras cuadrado y rectangulo
  */
 public class Cuadrado extends FigurasGeometricas{
     private int x4,y4;
     public double lado4;
+    
+    
     
     public Cuadrado(int x1, int x2, int x3, int x4,int y1, int y2, int y3,int y4){
        super(x1, x2, x3, y1, y2, y3);
        this.x4 = x4;
        this.y4 = y4;
     }
-    
+    /**
+     * metodo que valida si es una figura valida, obtiene la longitud de sus lados y obtiene el tipo de cuadrado
+     */
     @Override
     public void validarFigura(){
         
@@ -55,7 +61,9 @@ public class Cuadrado extends FigurasGeometricas{
             }
         }
     }
-
+    /**
+     * metodo que halla el area segun el tipo de cuadrado
+     */
     @Override
     public void hallarArea() {
         if(getTipo()==1){
@@ -68,7 +76,9 @@ public class Cuadrado extends FigurasGeometricas{
                 System.out.println("el area del rectangulo es: " +area);
             }
     }
-
+    /**
+     * metodo que halla el perimetro segun el tipo de cuadrado
+     */
     @Override
     public void hallarPerimetro() {
         if(getTipo()==1){
@@ -81,14 +91,20 @@ public class Cuadrado extends FigurasGeometricas{
                 System.out.println("el perimetro del rectangulo es: " +perimetro);
             }
     }
-
+    /**
+     * metodo que imprime el resultado de la validacion del tipo de figura 
+     */
     @Override
      public void imprimirResultado() {
          System.out.println(validar);
     }
-     
+    
+
+                                                                    
+        
+}
     
    
     
     
-}
+

@@ -8,6 +8,7 @@ package figurasgeometricas;
 /**
  *
  * @author david
+ * clase interface donde se encuentran todos los metodos a utilizar en el programa
  */
 public interface IOperaciones {
     

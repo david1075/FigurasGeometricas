@@ -8,6 +8,7 @@ package figurasgeometricas;
 /**
  *
  * @author david
+ * clase padre donde se encuentran las variables para calcular area y perimetro de las figuras
  */
 public abstract class FigurasGeometricas implements IOperaciones {
     
@@ -16,7 +17,15 @@ public abstract class FigurasGeometricas implements IOperaciones {
    double area,perimetro;
    String color, validar;
     
-  
+  /**
+   * constructor de la clase figuras geometricas que recibe 6 coordenadas
+   * @param x1
+   * @param x2
+   * @param x3
+   * @param y1
+   * @param y2
+   * @param y3 
+   */
    public FigurasGeometricas(int x1, int x2, int x3, int y1, int y2, int y3){
        this.x1 = x1;
        this.x2 = x2;
@@ -25,7 +34,6 @@ public abstract class FigurasGeometricas implements IOperaciones {
        this.y2 = y2;
        this.y3 = y3;
     }
-    
     
   
 

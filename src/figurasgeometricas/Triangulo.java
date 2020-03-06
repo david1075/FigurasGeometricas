@@ -8,12 +8,16 @@ package figurasgeometricas;
 /**
  *
  * @author david
+ * clase triangulo que calcula area, perimetro y longitud de sus lados para un triangulo
  */
 public class Triangulo extends FigurasGeometricas {
     
      public Triangulo(int x1, int x2, int x3, int y1, int y2, int y3){
        super(x1,x2,x3,y1,y2,y3);
     }
+     /**
+     * metodo que valida si es una figura valida, obtiene la longitud de sus lados y obtiene el tipo de triangulo
+     */
      
     @Override
     public void validarFigura() {
@@ -50,20 +54,27 @@ public class Triangulo extends FigurasGeometricas {
             }
         }
     }
+     /**
+     * metodo que halla el area de un triangulo
+     */
     @Override
     public void hallarPerimetro() {
         perimetro = getLado1()+getLado2()+getLado3();
         System.out.println("el perimetro del triangulo es: " +perimetro);
         
     }
-
+     /**
+     * metodo que halla el perimetro de un triangulo
+     */
     @Override
     public void hallarArea() {
         double semiperimetro = (getLado1() + getLado2() + getLado3()) / 2;
         area = Math.sqrt(semiperimetro * (semiperimetro - getLado1()) * (semiperimetro - getLado2()) * (semiperimetro - getLado3()));
         System.out.println("el area del triangulo es: "+area);
     }
-
+    /**
+     * metodo que imprime el resultado de la validacion del tipo de triangulo
+     */
     @Override
     public void imprimirResultado() {
        System.out.println(validar);
